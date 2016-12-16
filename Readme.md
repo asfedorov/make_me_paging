@@ -9,7 +9,7 @@ Options and defaults are:
 * page_next: element which will trigger moving forward on pagination navigation (default "#page_next")
 * page_prev: element which will trigger moving backward on pagination navigation (default"#page_prev")
 * page_cont: container for page links navigation to populate (default "#page_cont")
-* page_template: template for creating page links (default "<li><a {trigger}>{num}</a></li>")
+* page_template: template for creating page links (default `<li><a {trigger}>{num}</a></li>`)
 * on_page_changed: function to be called when page is changed (default function(){})
 
 Notes:
@@ -21,7 +21,7 @@ Notes:
 
 Example:
 * coffeescript:
-    ```javascript
+    ```coffeescript
 $(".table-order").makeMePaging({
     item_on_page: 10
     page_template: '<li class="pagination__item"><a href="javascript:void(0)" {trigger}>{num}</a></li>'
