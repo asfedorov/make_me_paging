@@ -6,11 +6,11 @@ Options and defaults are:
 * item_on_page: how much elements are on page (default 10)
 * tr_class: if you want to page only certain classed tr you can write it here (default false)
 * start_page: page starting from (default 1)
-* page_next: element which will trigger moving forward on pagination navigation (default "#page_next")
-* page_prev: element which will trigger moving backward on pagination navigation (default"#page_prev")
-* page_cont: container for page links navigation to populate (default "#page_cont")
-* page_template: template for creating page links (default `<li><a {trigger}>{num}</a></li>`)
-* on_page_changed: function to be called when page is changed (default function(){})
+* page_next: element which will trigger moving forward on pagination navigation (default `"#page_next"`)
+* page_prev: element which will trigger moving backward on pagination navigation (default `"#page_prev"`)
+* page_cont: container for page links navigation to populate (default `"#page_cont"`)
+* page_template: template for creating page links (default `"<li><a {trigger}>{num}</a></li>"`)
+* on_page_changed: function to be called when page is changed (default `function(){}`)
 
 Notes:
 * The plugin will add classes for table's rows and hide/show them imitating pagination.
@@ -23,13 +23,13 @@ Example:
 * coffeescript:
     ```coffeescript
 
-$(".table-order").makeMePaging({
+$(".table-order").makeMePaging
     item_on_page: 10
     page_template: '<li class="pagination__item"><a href="javascript:void(0)" {trigger}>{num}</a></li>'
     on_page_changed: (i) ->
         $(".table-order__current").removeClass("table-order__current")
         $(".table-order__opentable").hide()
-})
+
 
     ```
 * html:
