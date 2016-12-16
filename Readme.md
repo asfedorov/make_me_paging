@@ -22,6 +22,7 @@ Notes:
 Example:
 * coffeescript:
     ```coffeescript
+
 $(".table-order").makeMePaging({
     item_on_page: 10
     page_template: '<li class="pagination__item"><a href="javascript:void(0)" {trigger}>{num}</a></li>'
@@ -29,6 +30,7 @@ $(".table-order").makeMePaging({
         $(".table-order__current").removeClass("table-order__current")
         $(".table-order__opentable").hide()
 })
+
     ```
 * html:
     ```html
