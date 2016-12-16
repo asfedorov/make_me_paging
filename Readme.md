@@ -17,6 +17,7 @@ Notes:
 * If you pass tr_class it will count and hide/show only corresponding rows. Usefull when you are showing only odd or even rows with displaying the next row on click.
 * When passing template you must use {trigger} and {num} in it. The first must be include in element tag the user will click, the second one just insert the number of page.
 * It will add class 'active_page' to current page link in navigation
+* JQuery is required to run this
 
 Example:
 * coffeescript:
