@@ -100,4 +100,4 @@ $(".table-order").makeMePaging
 </div>
     ```
 
-It have small functionality but simple do the job.
+It have small functionality but simply do the job.
